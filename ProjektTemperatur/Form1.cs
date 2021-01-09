@@ -188,7 +188,7 @@ namespace ProjektTemperatur
             }
         }
 
-        private void btnTtF_Click(object sender, EventArgs e)     // Torrast till Fuktigaste
+        private void btnTtF_Click(object sender, EventArgs e)     // TORRAST TILL FUKTIGASTE    
         {
             using (var db = new ProjektarbeteContext())
 
