@@ -202,7 +202,7 @@ namespace ProjektTemperatur
                      select new { DagDatum = g.Key, FuktMedel = g.Average(rad => rad.luftfuktighet) }).OrderBy(g => g.FuktMedel);
 
                 dataGridView2.DataSource = q.ToList();
-                dataGridView2.Columns["FuktMedel"].DefaultCellStyle.Format = "0.#";      
+               dataGridView2.Columns["FuktMedel"].DefaultCellStyle.Format = "0.#";      
 
             }
 
