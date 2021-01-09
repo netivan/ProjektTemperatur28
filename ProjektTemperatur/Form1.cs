@@ -199,7 +199,7 @@ namespace ProjektTemperatur
                      where rad.plats == comboPlats.SelectedItem.ToString()         
                      group rad by rad.datum.Date      //grupperar raderna  ordnade enligt dagdatumen  "raggruppa le righe in ordine di data escludend ore e minuti" (.Date  toglie ore e minuti)
                     into g              
-                     select new { DagDatum = g.Key, LuftigMedel = g.Average(rad => rad.luftfuktighet) }).OrderBy(g => g.LuftigMedel);
+                     select new { DagDatum = g.Key, FuktMedel = g.Average(rad => rad.luftfuktighet) }).OrderBy(g => g.FuktMedel);
 
                 dataGridView2.DataSource = q.ToList();
                 dataGridView2.Columns["FuktMedel"].DefaultCellStyle.Format = "0.#";      
