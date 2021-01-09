@@ -53,13 +53,9 @@ namespace ProjektTemperatur
            // execl chart     var fl = new StreamWriter(@"C:\Prova\riskmedel.csv");
 
                 //  beräkning av mögelindex
-
-                int i = 1;
+                
                 double gammalRiskindex = 0;
-
-                double incremento = 0.1;
-
-
+                
                 foreach (var x in listMogel)     // x är första dagen DagDatum i tabellen 
                 {
 
